@@ -40,9 +40,11 @@ body {
   text-decoration: underline;
 }
 
+
+
+
+
 .hero_section {
-  display: flex;
-  flex-flow: initial;
   position: relative;
   z-index: 1;
   width: 100%;
@@ -50,8 +52,15 @@ body {
   min-height: 600px;
   max-height: 100vh;
   background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: initial;
 }
-.hero_content1 a{
+.hero_section:hover > a {
+  flex: 25% 1 1;
+}
+.hero_section > a {
   position: relative;
   overflow: hidden;
   display: flex;
@@ -60,53 +69,58 @@ body {
   flex-flow: initial;
   flex: 33.333% 1 1;
   height: 100%;
+  transition: all 0.3s ease;
 }
-.hero_content2 a{
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: initial;
-  flex: 33.333% 1 1;
-  height: 100%;
+.hero_section > a + a {
+  border-left: 5px solid #fff;
 }
-.hero_content3 a{
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: initial;
-  flex: 33.333% 1 1;
-  height: 100%;
+.hero_section > a:hover {
+  flex: 50% 1 1;
 }
-.hero_content1 img{
+.hero_section > a:hover img {
+  opacity: 0.5;
+}
+.hero_section > a:hover .img_cima_hero {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.hero_section img {
+  position: absolute;
   top: 50%;
   left: 50%;
-  
+  margin: auto;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
 }
-.hero_content2 img{
-  top: 50%;
-  left: 50%;
-  
+.hero_section .img_cima_hero {
+  max-width: 75%;
+  max-height: 60%;
+  max-height: calc(100% - 250px);
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.hero_content3 img{
-  top: 50%;
-  left: 50%;
-  
-}
-img{
-  width: 960px;
 
-}
+
+
+
+
+
+
+
+
+
+
 footer{
     background: #cfc317;
     padding: 30px;
     justify-content: space-between;
     align-items: right;
 }
-
+.footer-section a:hover{
+  text-decoration: underline;
+}
 .footer-content{
     display: flex;
     justify-content: flex-end;
@@ -116,7 +130,7 @@ footer{
 .footer-section{
     display: flex;
     flex-direction: column;
-     color: black;
+    color: black;
 }
 
 .footer-section a{
@@ -167,4 +181,4 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 0.5px;
-   }
+}
