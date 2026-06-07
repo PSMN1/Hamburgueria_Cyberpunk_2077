@@ -347,66 +347,51 @@ footer {
     line-height: 110%
 }
 .unidades {
-    background: linear-gradient(to bottom, #1d1d00, #000000 35%, #050505 100%);
+    background: #fafc01;
     padding: 100px 0;
-    color: #fff;
-    position: relative;
-}
-
-.unidades::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image:
-        linear-gradient(rgba(0, 247, 255, 0.08) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 247, 255, 0.08) 1px, transparent 1px);
-    background-size: 40px 40px;
-    pointer-events: none;
 }
 
 .unidades h2 {
     text-align: center;
-    color: #fafc01;
-    font-size: 2.5rem;
+    color: #000;
+    font-size: 2.8rem;
     margin-bottom: 50px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .unidades-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
 }
 
 .unidade-card {
-    background-color: #101010;
-    border-left: 5px solid #00f7ff;
-    border-bottom: 5px solid #fafc01;
+    background: #111;
     padding: 25px;
-    min-height: 220px;
-    transition: all .25s ease;
+    border-radius: 12px;
+    border: 3px solid #00f7ff;
+    transition: 0.3s;
 }
 
 .unidade-card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 18px rgba(0, 247, 255, 0.45);
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(0, 247, 255, 0.6);
 }
 
 .unidade-card h3 {
     color: #00f7ff;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     margin-bottom: 12px;
-    text-transform: uppercase;
 }
 
 .unidade-card p {
-    color: #d8d8d8;
+    color: #fff;
+    margin-bottom: 15px;
     line-height: 1.5;
-    margin-bottom: 18px;
 }
 
 .unidade-card span {
     color: #fafc01;
     font-weight: bold;
-    font-size: 1rem;
 }
