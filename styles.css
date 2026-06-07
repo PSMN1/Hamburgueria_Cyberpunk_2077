@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: 0;
+font-family: Blender;
+}
+@font-face {
+  font-family: 'Blender';
+  src: url('Fonte/BlenderPro-Book.ttf') format(truetype);
 }
 body {
   background-color: #fafc01;
@@ -33,6 +38,8 @@ body {
   display: flex;
   gap: 3rem;
   flex-wrap: wrap;
+  font-weight: bold;
+  font-size: 17px;
 }
 .menu a {
   text-decoration: none;
@@ -102,7 +109,7 @@ body {
 
 footer {
   background: #161616;
-  padding: 30px;
+  padding:30px;
   justify-content: space-between;
 }
 .footer-section a:hover {
@@ -114,7 +121,6 @@ footer {
   gap: 10rem;
   flex-wrap: wrap;
 }
-
 .footer-section {
   display: flex;
   flex-direction: column;
@@ -156,6 +162,7 @@ p {
 .sobre {
   padding: 4rem 0;
 }
+
 .sobre-flex {
   display: flex;
   gap: 3rem;
