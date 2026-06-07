@@ -158,45 +158,53 @@ p {
 .footer-bottom p {
   padding-top: 15px;
 }
+.sobre{
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
 
-.sobre {
-  padding: 4rem 0;
+}
+.sobre-flex{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+  
+}
+.sobre-imagem{
+    flex: 1;
+    
+  
+}
+.sobre-imagem img{
+    width: 100%;
+    border-radius: 10px;
+  
+  
+}
+.sobre-texto{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sobre-texto h2{
+    font-size: 2.5rem;
+    color: #000000;
+}
+.sobre-texto p{
+    color: #000000;
+    font-size: 1.1rem;
+}
+.exclusividade{
+    list-style: none;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
 }
 
-.sobre-flex {
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-}
-.sobre-imagem {
-  flex: 1;
-}
-.sobre-imagem img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-.sobre-texto {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.sobre-texto h2 {
-  font-size: 2.5rem;
-  color: #2c1810;
-}
-.sobre-texto p {
-  color: #666666;
-  font-size: 1.1rem;
-}
-.exclusividade {
-  list-style: none;
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5px;
-}
 .cardapio {
   padding: 4rem 0;
   background-color: #fafc01;
