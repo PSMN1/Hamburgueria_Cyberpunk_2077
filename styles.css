@@ -429,7 +429,7 @@ footer {
 
 .unidade-card h3 {
     color: #00f7ff;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 12px;
 }
 
@@ -442,4 +442,58 @@ footer {
 .unidade-card span {
     color: #fafc01;
     font-weight: bold;
+}
+.depoimentos{
+    padding: 100px 0;
+}
+
+.depoimentos h2{
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    color: #111;
+}
+.depoimentos-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.depoimento-card{
+    width: 300px;
+    padding: 25px;
+}
+
+.depoimento-card{
+    background: #fff47a;
+    border: 3px solid #00f7ff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 0 15px rgba(0, 247, 255, 0.3);
+    transition: 0.3s;
+}
+
+.depoimento-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(0, 247, 255, 0.7);
+}
+
+.depoimento-card p{
+    color: #222;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.depoimento-card h3{
+    color: #00aab0;
+    font-size: 1rem;
+    text-align: right;
+}
+.svg-baixo{
+    width: 100%;
+    display: block;
+    margin-top: 50px;
 }
