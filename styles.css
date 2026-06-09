@@ -497,3 +497,24 @@ footer {
     display: block;
     margin-top: 50px;
 }
+.svg-cima{
+    transform: rotateX(180deg);
+    width: 100%;
+    display: block;
+    margin-bottom: -1px;
+}
+.cardapio-expandido{
+    margin-top: 50px;
+}
+
+.cardapio-expandido summary{
+    list-style: none;
+}
+
+.cardapio-expandido summary::-webkit-details-marker{
+    display: none;
+}
+
+.extra-produtos{
+    margin-top: 50px;
+}
