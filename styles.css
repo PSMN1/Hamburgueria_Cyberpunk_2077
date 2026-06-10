@@ -245,48 +245,6 @@ footer {
   padding-top: 15px;
 }
 
-.sobre{
-    padding: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 80px;
-
-}
-
-.sobre-flex{
-    display: flex;
-    gap: 3rem;
-    align-items: center; 
-}
-
-.sobre-imagem{
-    flex: 1;
-}
-
-.sobre-imagem img{
-    width: 100%;
-    border-radius: 10px;
-}
-
-
-.sobre-texto{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    z-index: 2;
-}
-
-.sobre-texto h2{
-    font-size: 2.5rem;
-    color: #000000;
-}
-
-.sobre-texto p{
-    color: #000000;
-    font-size: 1.1rem;
-}
 
 .exclusividade{
     list-style: none;
@@ -302,7 +260,17 @@ footer {
   padding: 43.75rem 0 4rem ;
   background: linear-gradient(0deg, #000 0%,#000 60%, #595a00 78%, #fafc01 100%);
 }
-
+.cardapio2 {
+  margin-top: 10px;
+  padding-top:178px;
+  background: linear-gradient(0deg, #000 0%,#000 60%, #595a00 78%, #fafc01 100%);
+}
+.cardapio2 h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 3rem;
+}
 .cardapio h2 {
   text-align: center;
   font-size: 2.5rem;
@@ -444,7 +412,7 @@ footer {
     font-weight: bold;
 }
 .depoimentos{
-    padding: 100px 0;
+    padding: 120px 0 180px;
 }
 
 .depoimentos h2{
@@ -495,7 +463,6 @@ footer {
 .svg-baixo{
     width: 100%;
     display: block;
-    margin-top: 50px;
 }
 .svg-cima{
     transform: rotateX(180deg);
@@ -517,4 +484,59 @@ footer {
 
 .extra-produtos{
     margin-top: 50px;
+}
+
+
+
+
+.sobre{
+  background-color: black;
+  padding: 100px 0 100px 0;
+}
+.sobre-card{
+    display:flex;
+    align-items:center;
+    gap:80px;
+    padding:70px;
+    border:2px solid #00f7ff;
+    box-shadow:0 0 25px rgba(0,247,255,.3),0 0 80px rgba(0,247,255,.15);
+    backdrop-filter: blur(10px);
+    border-radius:20px;
+}
+.tag-neon{
+    display:inline-block;
+    margin-bottom:20px;
+    padding:8px 18px;
+    background:#00f7ff;
+    color:black;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+.sobre-card h2{
+    font-size:4rem;
+    color:#fafc01;
+    margin-bottom:25px;
+    text-shadow:0 0 20px rgba(250,252,1,.4);
+}
+.sobre-card p{
+    color:white;
+    font-size:1.1rem;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+.sobre-imagem{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+.sobre-imagem img{
+    width:100%;
+    max-width:500px;
+    z-index:2;
+}
+.circulo{
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    z-index:1;
 }
